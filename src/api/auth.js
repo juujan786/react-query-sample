@@ -6,5 +6,7 @@ export function login({ email, password }) {
         email,
         password
       })
-      .then(res => res.data)
+      .then(res => res.data).catch(err=>{
+        console.log("err1: ",err)
+      })
   }

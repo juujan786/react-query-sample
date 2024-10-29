@@ -11,8 +11,6 @@ const Home = () => {
 
     const [page, setPage] = useState(1);
     
-    
-
   const {data, isFetching, isFetched} = useQuery({
     queryKey: ["posts", { page }],
     keepPreviousData: true,
